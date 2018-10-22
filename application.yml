@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 8083
 spring:
   application:
     name: prover-domes
@@ -31,12 +31,12 @@ spring:
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
-  mapper-locations: classpath:mybaitis/mapper/*.xml
-  type-aliases-package: com.example.priverd01.pojo
+  mapper-locations: classpath:mybaitis/*.xml
+  type-aliases-package: com.example.dashboard.pojo
 eureka:
   instance:
     prefer-ip-address: true
-    instance-id: proder:8082
+    instance-id: proder:8083
   client:
     register-with-eureka: true
     fetch-registry: true
