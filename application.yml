@@ -1,11 +1,5 @@
 server:
-  port: 8081
-<<<<<<< HEAD
-spring: 
-  profiles:
-    active: dev
-
-=======
+  port: 8082
 spring:
   application:
     name: prover-domes
@@ -42,7 +36,7 @@ mybatis:
 eureka:
   instance:
     prefer-ip-address: true
-    instance-id: proder:8081
+    instance-id: proder:8082
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -50,23 +44,4 @@ eureka:
       defaultZone: http://localhost:7001/eureka/
 info:
   rediss: 湖南省株洲市
-  name: 王青
->>>>>>> four
----
-spring:
-  profiles: dev
-  application:
-    name: wangqing
-server:
-  port: 8082
----
-spring:
-  profiles: test
-  application:
-    name: lixiaohong
-server:
-<<<<<<< HEAD
-  port: 8083
-=======
-  port: 8082
->>>>>>> four
+  name: 李孝红
